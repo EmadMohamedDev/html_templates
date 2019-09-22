@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--IE Compatibility Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Header</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!--=========== Preloader start =================== -->
+    <div id="preloader"></div>
+    <!--=========== Preloader End =================== -->
+    <!-- =========overlay============= -->
+    <div class="overlay" id="overlay"></div>
+    <!-- =========overlay============= -->
+    <!--=========== header start =================== -->
+    <header>
+        <div class="row" style="margin-right: 0px; margin-left: 0px;">
+            <div class="col-4"><a href="#" class="back_botton link"><i class="fas fa-chevron-left"></i></a></div>
+            <div class="col-4" style="padding: 0;">
+                <!-- <h1 class="title text-center">search for</h1> -->
+                <img class="title" src="img/no_image.jpg" alt="">
+            </div>
+            <div class="col-4"><a class="menu link" href="#"><i class="fas fa-bars"></i></a></div>
+            <aside id="menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="link_href" href="#">
+                            <i class="fas fa-home"></i>
+                            <p>Home page</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link_href" href="#">
+                            <i class="fas fa-user"></i>
+                            <p>بياناتي</p>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="link_href" href="#">
+                            <i class="fas fa-user"></i>
+                            <p>الغاء الاشتراك</p>
+                        </a>
+
+
+                        <a class="link_href" href="#">
+                            <i class="fas fa-user"></i>
+                            <p>خروج</p>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <!--=========== header end=================== -->
+</body>
+<script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var href = location.href;
+    var op_id = href.split('?')[1];
+    //var op_id = url.split('&')[0];
+    if (op_id) {
+        $('.link_href').each(function () {
+            console.log($(this))
+            var $this = $(this);
+            var _href = $this.attr("href");
+            $this.attr("href", _href + '?' + op_id);
+        });
+    }
+</script>
+</body>
+</html>
