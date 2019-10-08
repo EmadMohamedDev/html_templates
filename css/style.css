@@ -1,0 +1,269 @@
+body {
+    height: 100%;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0), grey), url('../img/'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #EEE;
+}
+
+/* ul, ol {list-style: none;} */
+/* ----------------------- Start Welcome Page ----------------------- */
+.welcome_page .logo {
+    width: 100%;
+    height: 230px;
+    transform: skewY(-10deg);
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 32%;
+    position: relative;
+}
+
+.welcome_page .logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) skewY(10deg);
+    width: 45%;
+}
+
+.welcome_page a {
+    text-decoration: none;
+    padding: 8px;
+    color: #f3e5b8;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome_page a i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.welcome_page h6 {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome_page img {
+    text-align: center;
+    color: #f3e5b8;
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ----------------------- End Welcome Page ----------------------- */
+
+/* ----------------------- Start Menu ----------------------- */
+.menu-open {
+    left: 200px;
+    -webkit-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s; }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2); }
+
+  .stop-scrolling {
+    overflow: hidden; }
+.menu-container {
+    /* font-size: 12px; */
+    line-height: 1.4;
+    min-height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.menu-container .menu-wrapper {
+    display: none;
+    background-color: #FFF;
+}
+
+.menu-container .menu-wrapper,
+.menu-container .menu-wrapper .categories-wrapper {
+    width: 200px;
+    height: 100%;
+}
+
+.menu-container .menu-wrapper .categories-wrapper {
+    position: relative;
+    margin-bottom: -160px; 
+    min-height: 100%;
+}
+
+.menu-container .menu-wrapper .categories-wrapper .menu-categories {
+    width: 200px;
+    /* padding: 20px 0px; */
+}
+
+.menu-container .menu-wrapper .categories-wrapper .menu-categories li  {
+    /* height: 40px; */
+    padding: 8%;
+    width: 100%;
+}
+
+.menu-container .menu-wrapper .categories-wrapper .menu-categories li .li_link {
+    /* padding-left: 8%; */
+    height: 100%;
+    color: rgb(100,100,100);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-container .menu-wrapper .categories-wrapper .menu-categories li .li_link .col-3 {
+    float: left;
+}
+
+.menu-container .menu-wrapper .categories-wrapper .menu-categories li .li_link .col-9 {
+    float: right;
+}
+
+.menu-container .menu-wrapper .social-media-wrapper {
+    background: #fff;
+    width: 96%;
+    margin: 0 auto;
+    /* position: relative; */
+    font-size: 18px;
+    height: 60px;
+}
+
+.menu-container .menu-wrapper .social-media-wrapper .copyright {
+    color: #07AED8;
+    padding: 2px;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.menu-container .menu-wrapper .social-media-wrapper .ooredoo-logo-img {
+    display: block;
+    padding:5px 0px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.menu-container .menu-wrapper .social-media-wrapper .ooredoo-logo-img.ivas {
+    height: 40px;
+    width: auto;
+}
+/* ----------------------- End Menu ----------------------- */
+
+/* ----------------------- Start Header ----------------------- */
+.site-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: whitesmoke;
+    transition: left 0.3s;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.site-wrapper .main-nav {
+    width: 100%; 
+    height: 80px;
+    overflow: hidden;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .status-toolbar {
+    height: 30px;
+    background: #ea2227;
+    color: #969696;
+    margin-bottom: 0;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .status-toolbar .welcome {
+    color: #FFF;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar {
+    height: 65px;
+    width: 100%;
+    background: #fff;
+    color: #ea2227;
+    box-shadow: 0px 1px 1px #ebebeb;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar li {
+    height: 100%;
+    float:left;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .burger-menu-btn {
+    height: 55px;
+    width:50px;
+    padding: 10px 0px;
+    text-align: center;
+    vertical-align:center;
+    cursor: pointer;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .service-logo {
+    width: calc(100% - 50px);
+}
+
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .service-logo .logo-text {
+    height: 50px;
+    width: 100% !important;
+    padding: 10px;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .service-logo .logo-text img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .logo-img {
+    width: 20%;
+    padding: 17px 5px;
+}
+
+.site-wrapper .main-nav .main-nav-wrapper .menu-toolbar .logo-img img {
+    width: 100%;
+}
+
+.site-wrapper .main-container  {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch; 
+    min-height: calc(100% - 150px);
+    margin-bottom: -70px;
+    position: relative;
+}
+/* ----------------------- End Header ----------------------- */
