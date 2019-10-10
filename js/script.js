@@ -1,300 +1,107 @@
 /* ----------------------- Start Back Botton ----------------------- */
-
+$(document).on('click', '.back', function () {
+    'use strict';
+    parent.history.back();
+});
 /* ----------------------- End Back Botton ----------------------- */
 
 /* ----------------------- Start Loading Screen ----------------------- */
-$(window).on("load", function() {
-  "use strict";
-  $(".loading-overlay .spinner").fadeOut(800, function() {
-    $(this)
-      .parent()
-      .fadeOut(500, function() {
-        $("body").css("overflow", "auto");
-        $(this).remove();
-      });
-  });
+$(window).on('load', function () {
+    'use strict';
+    $('.loading-overlay .spinner').fadeOut(800, function () {
+        $(this).parent().fadeOut(500, function () {
+            $('body').css('overflow', 'auto');
+            $(this).remove();
+        });
+    });
 });
 /* ----------------------- End Loading Screen ----------------------- */
 
 /* ----------------------- Start Heart ----------------------- */
-$(".heart").click(function() {
-  $(this).toggleClass("active-heart");
+$('.heart').click(function () {
+    $(this).toggleClass('active-heart');
 });
 /* ----------------------- End Heart ----------------------- */
-/*================================================================
- * Debounced resize Plugin
- * =============================================================== */
-(function($, sr) {
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounce = function(func, threshold, execAsap) {
-    var timeout;
 
-    return function debounced() {
-      var obj = this,
-        args = arguments;
-      function delayed() {
-        if (!execAsap) func.apply(obj, args);
-        timeout = null;
-      }
+/* ----------------------- Start Focus Out Menu Bar ----------------------- */
+$(document).ready(function () {
+    $(".main").click(function () {
+        $('#menu-toggle').prop('checked', false);
+    });
+});
+/* ----------------------- End Focus Out Menu Bar ----------------------- */
 
-      if (timeout) clearTimeout(timeout);
-      else if (execAsap) func.apply(obj, args);
+/* ----------------------- Start Active Links ----------------------- */
+$(function () {
+    var url = window.location.pathname,
+        urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+    $('nav ul li a').each(function () {
+        if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+            $(this).addClass('active');
+        }
+    });
 
-      timeout = setTimeout(delayed, threshold || 100);
-    };
-  };
-  // smartresize
-  jQuery.fn[sr] = function(fn) {
-    return fn ? this.bind("resize", debounce(fn)) : this.trigger(sr);
-  };
-})(jQuery, "smartresize");
+    $('nav ul li ul li a').each(function () {
+        if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+            $(this).addClass('active');
+            $(this).parent().parent().css('display', 'block');
+        }
+    });
+});
+/* ----------------------- End Active Links ----------------------- */
 
-$(function() {
-  // hide loading spinner
-  $(".spinner").hide();
+/* ----------------------- Start Menu Overlay ----------------------- */
+$(function () {
+    var Accordion = function (el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
 
-  //show terms and conditions
-  $(".check-terms").hide();
-  var count = 0;
-  $(".show-terms").click(function() {
-    count++;
-    if (count % 2 !== 0) {
-      $(".check-terms").slideDown(200);
-    } else {
-      $(".check-terms").slideUp(200);
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {
+            el: this.el,
+            multiple: this.multiple
+        }, this.dropdown)
     }
-  });
 
-  var error = $("p.error");
-  if (error.length !== 0) {
-    $(".check-terms").slideDown(200);
-    count = 1;
-  }
+    Accordion.prototype.dropdown = function (e) {
+        var $el = e.data.el;
+        $this = $(this),
+            $next = $this.next();
 
-  /*=====================================================================================
-                     Burger Menu Script add to the ui library
-     *====================================================================================*/
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
 
-  var overlay = $('<div class="overlay"></div>');
-  //when the user clicks on the menu icon check the existence menu-open class
-  $(".burger-menu-btn").click(function() {
-    if ($(".site-wrapper").hasClass("menu-open")) {
-      $(".site-wrapper").removeClass("menu-open");
-      $(".menu-wrapper").css({ display: "none" });
-      if ($(".overlay")) {
-        $(".overlay").remove();
-      }
-    } else {
-      // if the class doesnt exist add it and set the body overflow-x to hidden
-      // by adding hide-overflow class
-      $("body").addClass("hide-overflow");
-      $(".site-wrapper").addClass("menu-open");
-      $(".menu-wrapper").css({ display: "block" });
-      //append the overlay so when the user clicks on it
-      //the menu disappears
-      $(".site-wrapper").append(overlay);
-      $(".site-wrapper").addClass("stop-scrolling");
-      $(".overlay").click(function() {
-        if ($(".site-wrapper").hasClass("menu-open")) {
-          $(".site-wrapper").removeClass("menu-open");
-          $(".menu-wrapper").css({ display: "none" });
-          $(".site-wrapper").removeClass("stop-scrolling");
-          if ($(".overlay")) {
-            $(".overlay").remove();
-          }
+        if (!e.data.multiple) {
+            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        };
+    };
+
+    var accordion = new Accordion($('#accordion'), false);
+});
+/* ----------------------- End Menu Overlay ----------------------- */
+
+/* ----------------------- Start Owl Carousel ----------------------- */
+$('.owl-one').owlCarousel({
+    center: false,
+    rtl: true,
+    loop: false,
+    //margin: 10,
+    nav: true,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
         }
-      });
     }
-  });
-
-  /*=====================================================================================
-                                    Toggle Categories
-     *====================================================================================*/
-  $(".toggle-btn").click(function(e) {
-    e.preventDefault();
-    var host = "http://localhost:8000/";
-    var siblingLinks = $(this)
-      .parent()
-      .siblings()
-      .children();
-    var route = $(this).attr("href");
-    //add active class to the clicked tab
-    $(this).addClass("active");
-    // remove the active class from the other tabs
-    siblingLinks.removeClass("active");
-
-    $.ajax({
-      type: "GET",
-      url: route,
-      async: false,
-      success: function(data) {
-        //var slice = $(data).find(".content-wrapper").html();
-        //   alert(data);
-        $(".toggle-result").html(data);
-        setWidth();
-        setHeight();
-      },
-      beforeSend: function() {
-        var ua = navigator.userAgent;
-        if (ua.indexOf("Android") >= 0) {
-          var androidversion = parseFloat(ua.slice(ua.indexOf("Android") + 8));
-          if (androidversion > 4.3) {
-            $(".spinner").show();
-            $(".toggle-result").removeClass("animated slideInRight");
-            $(".toggle-result").css({ opacity: "0" });
-            $(".audio-player").remove();
-          }
-        } else {
-          $(".spinner").show();
-          $(".toggle-result").removeClass("animated slideInRight");
-          $(".toggle-result").css({ opacity: "0" });
-          $(".audio-player").remove();
-        }
-      },
-      complete: function() {
-        var ua = navigator.userAgent;
-        if (ua.indexOf("Android") >= 0) {
-          var androidversion = parseFloat(ua.slice(ua.indexOf("Android") + 8));
-          if (androidversion > 4.3) {
-            $(".spinner").hide();
-            $(".toggle-result").addClass("animated slideInRight");
-            $(".toggle-result").css({ opacity: "1" });
-          }
-        } else {
-          $(".spinner").hide();
-          $(".toggle-result").addClass("animated slideInRight");
-          $(".toggle-result").css({ opacity: "1" });
-        }
-      }
-    });
-  }); // end click
-  //Trigger the click event on the selected element
-  //when the page loads
-  $(".trigger-click").trigger("click");
-
-  /*=====================================================================================
-                                 Search Box Script
-     *====================================================================================*/
-  setContainerHeight();
-  // get all the media elements on the page
-  // the items i want to filter must contain
-  // a search-hook class
-
-  var all_media = $("#all-media").html();
-  var noResultsMsg = $('<li class="not-found">No results to show.</li>');
-  $("#all-media").append(noResultsMsg);
-  noResultsMsg.hide();
-  //Get the text typed in the search box
-  $("#search_box").on("keyup", function(e) {
-    //Code for overloading the :contains selector to be case insensitive:
-    //Without the overload on the :contains selector jquery would normaly only underline the second line
-
-    // New selector
-    jQuery.expr[":"].Contains = function(a, i, m) {
-      return (
-        jQuery(a)
-          .text()
-          .toUpperCase()
-          .indexOf(m[3].toUpperCase()) >= 0
-      );
-    };
-
-    // Overwrites old selecor
-    jQuery.expr[":"].contains = function(a, i, m) {
-      return (
-        jQuery(a)
-          .text()
-          .toUpperCase()
-          .indexOf(m[3].toUpperCase()) >= 0
-      );
-    };
-
-    var searchText = $(this).val();
-
-    if ((searchText != null) & (searchText.length > 0)) {
-      // find the elements which contains the search text
-      var results = $(".search-hook:contains(" + searchText + ")");
-      var notContain = $(".search-hook:not(:contains(" + searchText + "))");
-      setWidth();
-      setHeight();
-      if (results.length > 0) {
-        //$('#all-media').html(results);
-        setWidth();
-        setHeight();
-        results.show();
-        notContain.hide();
-        noResultsMsg.hide();
-      } else {
-        setWidth();
-        setHeight();
-        results.hide();
-        notContain.hide();
-        noResultsMsg.show();
-      }
-    } else {
-      //when the user deletes the search text
-      // show all media elements again
-      $("#all-media").html(all_media);
-      $("#all-media").append(noResultsMsg);
-      noResultsMsg.hide();
-
-      setWidth();
-      setHeight();
-    } // end if
-  }); // end on keyup
-
-  /*=====================================================================================
-                                 css calc Mimicing 
-     *====================================================================================*/
-
-  $(window).smartresize(function() {
-    setWidth();
-    setHeight();
-    setContainerHeight();
-  });
-
-  function setWidth() {
-    //get width of elements
-    var menuWidth = $(".menu-toolbar").width();
-    var serviceLogo = $(".service-logo");
-    var logoText = $(".logo-text");
-
-    serviceLogo.css({
-      width: menuWidth - 100 + "px"
-    });
-
-    var serviceLogoWidth = serviceLogo.width();
-    logoText.css({
-      width: serviceLogoWidth - 100 + "px"
-    });
-  }
-  function setHeight() {
-    var thumbnail = $("a.thumbnail");
-    var mediaGalleryliHeight = $(".media-gallery li").innerHeight();
-    thumbnail.css({
-      height: mediaGalleryliHeight + "px",
-      position: "absolute",
-      top: "0",
-      left: "0"
-    });
-  }
-
-  function setContainerHeight() {
-    var dheight = $(window).height();
-    var mainContainer = $(".main-container");
-    mainContainer.css({ "min-height": dheight - 150 + "px" });
-  }
-  setWidth();
-  setHeight();
-
-  /*=====================================================================================
-                                 Place play icons in video thumbs
-     *====================================================================================*/
-  var playIcon = $('<span class="fa fa-play-circle fa-3x blue"></span>');
-  $(".video .thumbnail").append(playIcon);
-
-  /*=====================================================================================
-                                 change English Number to Arabic
-     *====================================================================================*/
-}); // end ready
+});
+$(".owl-prev").html('<i class="fas fa-chevron-circle-left"></i>');
+$(".owl-next").html('<i class="fas fa-chevron-circle-right"></i>');
+/* ----------------------- End Owl Carousel ----------------------- */
