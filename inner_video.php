@@ -1,12 +1,4 @@
 <?php include 'header.php';?>
-<style>
-video[poster] {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-</style>
-
 <body>
     <!-- Start main content -->
     <section class="main">
@@ -17,7 +9,7 @@ video[poster] {
                         <h5 class="inner-img-title">الخاتمة 232</h5>
 
                         <div class="video-item">
-                            <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto"
+                            <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered rounded" controls
                                 poster="img/16500.jpg" data-setup="{}" onended="myFunction()">
                                 <source src="img/232.mp4" type='video/mp4' />
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading

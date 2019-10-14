@@ -1,36 +1,40 @@
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
+<style>
+    .main .btn-more,
+    .main .btn-more,
+    .main .btn-download {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
 
 <body>
     <!-- Start main content -->
     <section class="main">
+        <ul class="nav nav-pills text-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-img-tab" data-toggle="pill" href="#pills-img" role="tab" aria-controls="pills-img" aria-selected="true"><i class="far fa-image"></i> صور</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="pills-audio-tab" data-toggle="pill" href="#pills-audio" role="tab" aria-controls="pills-audio" aria-selected="false"><i class="fa fa-headphones"></i> صوتيات</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="pills-waiting-tab" data-toggle="pill" href="#pills-waiting" role="tab" aria-controls="pills-waiting" aria-selected="false"><i class="fa fa-music"></i> أدعية انتظار</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab" aria-controls="pills-video" aria-selected="false"><i class="fa fa-film"></i> فيديو</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                <a class="nav-link" id="pills-congratz-tab" data-toggle="pill" href="#pills-congratz" role="tab" aria-controls="pills-congratz" aria-selected="false"><i class="far fa-image"></i> تهنئة</a>
+            </li> -->
+        </ul>
+
         <div class="container">
-            <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-img-tab" data-toggle="pill" href="#pills-img" role="tab"
-                        aria-controls="pills-img" aria-selected="true"><i class="far fa-image"></i> صور</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-audio-tab" data-toggle="pill" href="#pills-audio" role="tab"
-                        aria-controls="pills-audio" aria-selected="false"><i class="fa fa-headphones"></i> صوتيات</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-waiting-tab" data-toggle="pill" href="#pills-waiting" role="tab"
-                        aria-controls="pills-waiting" aria-selected="false"><i class="fa fa-music"></i> أدعية انتظار</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab"
-                        aria-controls="pills-video" aria-selected="false"><i class="fa fa-film"></i> فيديو</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-congratz-tab" data-toggle="pill" href="#pills-congratz" role="tab"
-                        aria-controls="pills-congratz" aria-selected="false"><i class="far fa-image"></i> تهنئة</a>
-                </li>
-            </ul>
-
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-img" role="tabpanel" aria-labelledby="pills-img-tab">
                     <div class="head-title">
@@ -94,7 +98,7 @@
                     </div>
 
                     <div class="btn-more text-center rounded">
-                        <button type="button" class="btn">المزيد</button>
+                        <a href="list_img.php" class="btn">المزيد</a>
                     </div>
                 </div>
 
@@ -148,7 +152,7 @@
                     </ul>
 
                     <div class="btn-more text-center rounded">
-                        <button type="button" class="btn">المزيد</button>
+                        <a href="list_audio.php" class="btn">المزيد</a>
                     </div>
                 </div>
 
@@ -188,7 +192,7 @@
                     </ul>
 
                     <div class="btn-more text-center rounded">
-                        <button type="button" class="btn">المزيد</button>
+                        <a href="list_audio.php" class="btn">المزيد</a>
                     </div>
                 </div>
 
@@ -221,22 +225,21 @@
                     </div>
 
                     <div class="btn-more text-center rounded">
-                        <button type="button" class="btn">المزيد</button>
+                        <a href="list_video.php" class="btn">المزيد</a>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="pills-congratz" role="tabpanel" aria-labelledby="pills-congratz-tab">
+                <!-- <div class="tab-pane fade" id="pills-congratz" role="tabpanel" aria-labelledby="pills-congratz-tab">
                     <div class="head-title">
                         <h5 class="text-center">تهنئة</h5>
                         <div id="all-media">
                             <div class="media-gallery">
-                                <iframe src="https://islamicgate.ivascloud.com/greetings/ooredooKuwait/450687"
-                                    style="height:700px; width:100%"></iframe>
+                                <iframe src="https://islamicgate.ivascloud.com/greetings/ooredooKuwait/450687" style="height:700px; width:100%"></iframe>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>

@@ -1,11 +1,19 @@
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
+<style>
+    .main .img-content .img-content-title {
+        background-color: #FFF;
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+</style>
 
 <body>
     <!-- Start main content -->
     <section class="main">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -13,7 +21,7 @@
                         </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -22,7 +30,7 @@
                     </a>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -31,7 +39,7 @@
                     </a>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -40,7 +48,7 @@
                     </a>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -49,7 +57,7 @@
                     </a>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <a href="inner_img.php" class="img-link">
                         <div class="img-content text-center">
                             <img class="rounded" src="img/3.gif" alt="T">
@@ -57,7 +65,10 @@
                         </div>
                     </a>
                 </div>
+                <!-- <div class="btn-more text-center rounded">
+                    <a href="inner_img.php" class="btn border-0">الرجوع</a>
+                </div> -->
             </div>
         </div>
     </section>
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>

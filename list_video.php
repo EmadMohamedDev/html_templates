@@ -1,4 +1,13 @@
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
+<style>
+    .main .btn-more,
+    .main .btn-more,
+    .main .btn-download {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
 
 <body>
     <!-- Start main content -->
@@ -10,6 +19,7 @@
                         <a href="inner_video.php" class="link_href">
                             <img class="rounded" src="img/16500.jpg" alt="v">
                             <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
                         </a>
                     </div>
                 </div>
@@ -19,15 +29,7 @@
                         <a href="inner_video.php" class="link_href">
                             <img class="rounded" src="img/16500.jpg" alt="v">
                             <i class="fa fa-play-circle fa-2x play"></i>
-                        </a>
-                    </div>
-            </div>
-
-                <div class="col-6">
-                    <div class="item">
-                        <a href="inner_video.php" class="link_href">
-                            <img class="rounded" src="img/16500.jpg" alt="v">
-                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
                         </a>
                     </div>
                 </div>
@@ -37,6 +39,7 @@
                         <a href="inner_video.php" class="link_href">
                             <img class="rounded" src="img/16500.jpg" alt="v">
                             <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
                         </a>
                     </div>
                 </div>
@@ -46,6 +49,7 @@
                         <a href="inner_video.php" class="link_href">
                             <img class="rounded" src="img/16500.jpg" alt="v">
                             <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
                         </a>
                     </div>
                 </div>
@@ -55,6 +59,17 @@
                         <a href="inner_video.php" class="link_href">
                             <img class="rounded" src="img/16500.jpg" alt="v">
                             <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="item">
+                        <a href="inner_video.php" class="link_href">
+                            <img class="rounded" src="img/16500.jpg" alt="v">
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h6 class="inner-video-title text-center rounded-bottom"> اللهم أني أسالك باسمك العظيم</h6>
                         </a>
                     </div>
                 </div>
@@ -65,4 +80,4 @@
             </div>
         </div>
     </section>
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>

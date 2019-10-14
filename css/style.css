@@ -1,5 +1,8 @@
+html,
 body {
     height: 100%;
+}
+body {
     /* direction: rtl; */
     font-family: myFont;
     /* background-image: linear-gradient(rgba(255, 255, 255, 0), grey), url('../img/'); */
@@ -196,7 +199,8 @@ header nav .accordion li:last-child .link {
 }
 
 header nav .accordion .link .ivas_logo {
-    width: 75%;
+    width: 60%;
+    margin-top: 20%;
 }
 
 header nav .accordion .link {
@@ -312,7 +316,8 @@ header .h_title img {
 
 /* ----------------------- Start Home Page ----------------------- */
 .main {
-    padding-top: 16%;
+    padding-top: 20%;
+    margin-bottom: 20%;
 }
 
 .main .nav {
@@ -320,11 +325,16 @@ header .h_title img {
     padding: 0;
 }
 
+.main .nav .nav-item {
+    width: 23%;
+}
 
 .main .nav .nav-item .nav-link {
     background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     color: #FFF;
     width: 100%;
+    height: 50px;
+    padding: 0 !important;
 }
 
 .nav-pills .nav-link.active {
@@ -335,10 +345,11 @@ header .h_title img {
 .main .nav .nav-item .nav-link i {
     display: block;
     text-align: center;
+    line-height: 1.7;
 }
 
 .main .nav .nav-item {
-    padding-right: 2px;
+    margin: 0 auto;
 }
 
 .main .tab-content {
@@ -375,9 +386,10 @@ header .h_title img {
 .main .btn-download {
     /* background-color: #ea2227; */
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    width: 80%;
+    width: 30%;
     margin: 0 auto;
-    margin-bottom: 15%;
+    margin-top: 4%;
+    display: inline-block;
 }
 
 .main .btn-more .btn,
@@ -530,6 +542,13 @@ header .h_title img {
     color: #FBAB7E;
 }
 
+.main .item .link_href .inner-video-title {
+    background-color: #FFF;
+    color: #000;
+    height: 35px;
+    line-height: 35px;
+}
+
 /* ----------------------- End Home Page ----------------------- */
 
 /* ----------------------- Start Inner Img Page ----------------------- */
@@ -537,15 +556,15 @@ header .h_title img {
     color: #FFF;
 }
 
-.main .btn-more {
+/* .main .btn-more {
     margin-top: 3%;
     margin-bottom: 15%;
-}
+} */
 
-.main .btn-download {
+/* .main .btn-download {
     margin-bottom: 15%;
     margin-top: 3%;
-}
+} */
 
 /* ----------------------- End Inner Img Page ----------------------- */
 

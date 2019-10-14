@@ -14,6 +14,7 @@
     <link rel="stylesheet" href='css/all.min.css'>
     <link rel="stylesheet" href='css/owl.carousel.min.css'>
     <link rel="stylesheet" href='css/owl.theme.default.min.css'>
+    <link rel="stylesheet" href='css/video-js.min.css'>
     <link rel="stylesheet" href='css/style.css'>
     <!-- title -->
     <title>Template</title>
@@ -76,14 +77,14 @@
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a class="link" href="#">
+                                <!-- <li>
+                                    <a class="link" href="https://islamicgate.ivascloud.com/greetings/ooredooKuwait/450687">
                                         <div class="text-right">بطاقة التهنئة<i class="fa fa-camera"></i> </div>
                                     </a>
-                                </li>
+                                </li> -->
 
                                 <li>
-                                    <a class="link" href="#">
+                                    <a class="link" href="terms.php">
                                         <div class="text-right">الارشادات<i class="fa fa-info"></i> </div>
                                     </a>
                                 </li>
@@ -106,9 +107,9 @@
                     <div class="col-8 h_title" style="padding-right: 27%;">
                         <a href="home.php">
                             <div class="page_title">
-                            <!-- <h4 class="text-center h5">55</h4> -->
-                            <img src="img/logotext_grey.svg" alt="tets">
-                        </div>
+                                <!-- <h4 class="text-center h5">55</h4> -->
+                                <img src="img/logotext_grey.svg" alt="tets">
+                            </div>
                         </a>
                     </div>
                 </div>
