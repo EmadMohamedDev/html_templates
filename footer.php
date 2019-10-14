@@ -23,6 +23,7 @@
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/script.js"></script>
 
 </body>

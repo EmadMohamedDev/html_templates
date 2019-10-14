@@ -39,44 +39,57 @@
 
                     <div class="row">
                         <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+
                         </div>
 
                         <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="col-4">
-                            <div class="img-content text-center">
-                                <img class="rounded" src="img/3.gif" alt="T">
-                                <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
-                            </div>
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4">
+                            <a href="inner_img.php" class="img-link">
+                                <div class="img-content text-center">
+                                    <img class="rounded" src="img/3.gif" alt="T">
+                                    <h6 class="img-content-title rounded-bottom"> 2 دعاء في جوف الليل</h6>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -92,42 +105,42 @@
 
                     <ul class="audio-play-list list-unstyled">
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
@@ -146,28 +159,28 @@
 
                     <ul class="audio-play-list list-unstyled">
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
                         </li>
 
                         <li class="search-hook">
-                            <a href="#" class="cf arabic">
+                            <a href="inner_audio.php" class="cf arabic">
                                 <div class="play-status"><span class="fa fa-play"></span></div>
                                 <p class="text-right">اللهم ارزقنا رزقاً يزيدنا لك شكرا</p>
                             </a>
@@ -186,21 +199,23 @@
 
                     <div class="owl-one owl-carousel owl-theme">
                         <div class="item">
-                            <a href="#" class="link_href">
-                                <img class="rounded" src="img/16500.jpg" alt="v">
+                            <a href="inner_video.php" class="link_href">
+                                <img id="" class="rounded" src="img/16500.jpg" alt="v">
                                 <i class="fa fa-play-circle fa-3x play"></i>
                             </a>
                         </div>
 
                         <div class="item">
-                            <a href="#" class="link_href">
+                            <a href="inner_video.php" class="link_href">
                                 <img src="img/16500.jpg" alt="v">
+                                <i class="fa fa-play-circle fa-3x play"></i>
                             </a>
                         </div>
 
                         <div class="item">
-                            <a href="#" class="link_href">
+                            <a href="inner_video.php" class="link_href">
                                 <img src="img/16500.jpg" alt="v">
+                                <i class="fa fa-play-circle fa-3x play"></i>
                             </a>
                         </div>
                     </div>
@@ -213,12 +228,9 @@
                 <div class="tab-pane fade" id="pills-congratz" role="tabpanel" aria-labelledby="pills-congratz-tab">
                     <div class="head-title">
                         <h5 class="text-center">تهنئة</h5>
-
-
-
                         <div id="all-media">
                             <div class="media-gallery">
-                                <iframe src="https://misharialafasy.net/wap/greetings/ooredooKuwait/450687"
+                                <iframe src="https://islamicgate.ivascloud.com/greetings/ooredooKuwait/450687"
                                     style="height:700px; width:100%"></iframe>
                             </div>
                         </div>

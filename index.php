@@ -18,14 +18,14 @@
 </head>
 <style>
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), #4c4a4a);
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0), #4c4a4a); */
 }
 </style>
 
 <body>
     <div class="welcome_page">
         <div class="logo">
-            <img class="rounded" src="img/mobinil-logo.png" alt="ivas">
+            <img class="rounded" src="img/16500.jpg" alt="ivas">
         </div>
         <!--<h2>اجهزتى</h2>-->
         <a href="home.php" class="wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite"

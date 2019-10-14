@@ -7,7 +7,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #dcdbd4;
+    /* background-color: #dcdbd4; */
+    /* background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
 }
 
 /* ----------------------- Start Welcome Page ----------------------- */
@@ -26,7 +29,7 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) skewY(10deg);
-    width: 45%;
+    width: 60%;
 }
 
 @media (min-width: 1400px) {
@@ -110,7 +113,7 @@ header .hamburger-wrapper {
 }
 
 header .hamburger-wrapper .hamburger {
-    background: #ea2227;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     display: block;
     height: 2px;
     position: absolute;
@@ -123,7 +126,7 @@ header .hamburger-wrapper .hamburger {
 header .hamburger-wrapper .hamburger:before,
 header .hamburger-wrapper .hamburger:after {
     content: "";
-    background: #ea2227;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     display: block;
     height: 2px;
     position: absolute;
@@ -145,13 +148,13 @@ header #menu-toggle:checked+.hamburger-wrapper {
 }
 
 header #menu-toggle:checked+label .hamburger:before {
-    background: #ea2227;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     top: 0;
     transform: rotate(45deg);
 }
 
 header #menu-toggle:checked+label .hamburger:after {
-    background: #ea2227;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     bottom: 0;
     transform: rotate(-45deg);
 }
@@ -192,6 +195,10 @@ header nav .accordion li:last-child .link {
     border-bottom: 0;
 }
 
+header nav .accordion .link .ivas_logo {
+    width: 75%;
+}
+
 header nav .accordion .link {
     text-align: center;
     cursor: pointer;
@@ -227,11 +234,11 @@ header nav .accordion li i i.fa-chevron-down {
 }
 
 header nav .accordion li.open .link {
-    color: #b63b4d;
+    /* background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
 }
 
 header nav .accordion li.open .link i {
-    color: #b63b4d;
+    /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
 }
 
 header nav .accordion li.open .link i.fa-chevron-down {
@@ -264,7 +271,7 @@ header nav .accordion .submenu a {
 }
 
 header nav .accordion .submenu a:hover {
-    background: #b63b4d;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     color: #FFF;
 }
 
@@ -295,6 +302,11 @@ header .h_title img {
     display: block;
 }
 
+.active {
+    color: #F7CE68 !important;
+    /* background-color: #FFF; */
+}
+
 /* End Menu Bar */
 /* ----------------------- End Header ----------------------- */
 
@@ -308,10 +320,16 @@ header .h_title img {
     padding: 0;
 }
 
+
 .main .nav .nav-item .nav-link {
-    background-color: #b63b4d;
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     color: #FFF;
     width: 100%;
+}
+
+.nav-pills .nav-link.active {
+    background: #FFF !important;
+    color: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%) !important;
 }
 
 .main .nav .nav-item .nav-link i {
@@ -328,41 +346,57 @@ header .h_title img {
 }
 
 .main .tab-content .head-title {
-    color: #b63b4d;
+    color: #FFF;
 }
 
-.main .tab-content .img-content {
+.main .tab-content .img-link,
+.main .img-link {
+    color: #676767;
+    text-decoration: none;
+}
+
+.main .tab-content .img-link .img-content,
+.main .img-link .img-content {
     width: 100%;
 }
 
-.main .tab-content .img-content img {
+.main .tab-content .img-link .img-content img,
+.main .img-link .img-content img {
     width: 100%;
 }
 
-.main .tab-content .img-content .img-content-title {
+.main .tab-content .img-content .img-content-title,
+.main .img-content .img-content-title {
     background-color: #FFF;
 }
 
-.main .tab-content .btn-more {
-    background-color: #b63b4d;
+.main .btn-more,
+.main .btn-more,
+.main .btn-download {
+    /* background-color: #ea2227; */
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     width: 80%;
     margin: 0 auto;
     margin-bottom: 15%;
 }
 
-.main .tab-content .btn-more .btn {
+.main .btn-more .btn,
+.main .btn-more .btn,
+.main .btn-download .btn {
     color: #FFF;
     font-weight: bold;
     cursor: pointer;
 }
 
-.main .tab-content .btn-more .btn:focus {
+.main .btn-more .btn:focus,
+.main .btn-more .btn:focus,
+.main .btn-download .btn:focus {
     outline: 0;
     border: 0;
     box-shadow: none;
 }
 
-.main .tab-content .audio-content {
+/* .main .tab-content .audio-content {
     width: 100%;
 }
 
@@ -378,15 +412,17 @@ header .h_title img {
 .main .tab-content .audio-content .audio-content-title h6 {
     font-size: 18px;
     line-height: 25px;
-}
+} */
 
-.main .tab-content .audio-play-list {
+.main .tab-content .audio-play-list,
+.main .audio-play-list {
     padding-bottom: 10px;
     width: 100%;
     margin: 0;
 }
 
-.main .tab-content .audio-play-list .search-hook {
+.main .tab-content .audio-play-list .search-hook,
+.main .audio-play-list .search-hook {
     width: 100%;
     height: 50px;
     cursor: pointer;
@@ -394,11 +430,12 @@ header .h_title img {
     margin-bottom: 20px;
     border-radius: 5px;
     background: #fff;
-    box-shadow: 1px 1px 1px #ea2227;
+    box-shadow: 1px 1px 1px #FBAB7E;
     padding-bottom: 10px;
 }
 
-.main .tab-content .audio-play-list .search-hook .arabic {
+.main .tab-content .audio-play-list .search-hook .arabic,
+.main .audio-play-list .search-hook .arabic {
     display: block;
     width: 100%;
     font-family: "Droid Arabic Kufi", sans-serif;
@@ -407,7 +444,8 @@ header .h_title img {
     color: rgb(100, 100, 100);
 }
 
-.main .tab-content .audio-play-list .search-hook .arabic .play-status {
+.main .tab-content .audio-play-list .search-hook .arabic .play-status,
+.main .audio-play-list .search-hook .arabic .play-status {
     width: 40px;
     height: 40px;
     text-align: center;
@@ -415,21 +453,26 @@ header .h_title img {
     float: left;
 }
 
-.main .tab-content .audio-play-list .search-hook .arabic p {
+.main .tab-content .audio-play-list .search-hook .arabic p,
+.main .audio-play-list .search-hook .arabic p {
     padding: 10px 10px;
 }
 
-.main .tab-content .owl-one {
+.main .tab-content .owl-one,
+.main .owl-one {
     width: 100%;
 }
 
-.main .tab-content .owl-one .item .link_href img {
+.main .tab-content .owl-one .item .link_href img,
+.main .owl-one .item .link_href img {
     width: 80%;
     margin: 0 auto;
 }
 
 .main .tab-content .owl-one .owl-nav .owl-prev,
-.main .tab-content .owl-one .owl-nav .owl-next {
+.main .tab-content .owl-one .owl-nav .owl-next,
+.main .owl-one .owl-nav .owl-prev,
+.main .owl-one .owl-nav .owl-next {
     position: absolute;
     font-size: 25px;
     top: 30%;
@@ -440,34 +483,42 @@ header .h_title img {
 }
 
 .main .tab-content .owl-one .owl-nav .owl-prev:focus,
-.main .tab-content .owl-one .owl-nav .owl-next:focus {
+.main .tab-content .owl-one .owl-nav .owl-next:focus,
+.main .owl-one .owl-nav .owl-prev:focus,
+.main .owl-one .owl-nav .owl-next:focus {
     background: transparent;
 }
 
-.main .tab-content .owl-one .owl-nav .owl-prev {
+.main .tab-content .owl-one .owl-nav .owl-prev,
+.main .owl-one .owl-nav .owl-prev {
     left: 0;
 }
 
-.main .tab-content .owl-one .owl-nav .owl-next {
+.main .tab-content .owl-one .owl-nav .owl-next,
+.main .owl-one .owl-nav .owl-next {
     right: 0;
 }
 
-.main .tab-content .owl-one .owl-dots .owl-dot.active span {
-    background: #b63b4d;
+.main .tab-content .owl-one .owl-dots .owl-dot.active span,
+.main .owl-one .owl-dots .owl-dot.active span {
+    background: #FBAB7E;
     outline: 0;
     border: 0;
 }
 
-.main .tab-content .owl-one .owl-dots span {
+.main .tab-content .owl-one .owl-dots span,
+.main .owl-one .owl-dots span {
     background-color: #676767;
 }
 
-.main .tab-content .owl-one .owl-dots button:focus {
+.main .tab-content .owl-one .owl-dots button:focus,
+.main .owl-one .owl-dots button:focus {
     outline: 0;
     border: 0;
 }
 
-.main .tab-content .item .link_href .play {
+.main .tab-content .item .link_href .play,
+.main .item .link_href .play {
     position: absolute;
     display: block;
     top: 50%;
@@ -476,10 +527,239 @@ header .h_title img {
     -moz-transform: translate(-50%, -80%);
     -ms-transform: translate(-50%, -80%);
     transform: translate(-50%, -80%);
-    color: #ea2227;
+    color: #FBAB7E;
 }
 
 /* ----------------------- End Home Page ----------------------- */
+
+/* ----------------------- Start Inner Img Page ----------------------- */
+.inner-img .inner-img-title {
+    color: #FFF;
+}
+
+.main .btn-more {
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+
+.main .btn-download {
+    margin-bottom: 15%;
+    margin-top: 3%;
+}
+
+/* ----------------------- End Inner Img Page ----------------------- */
+
+/* ----------------------- Start List Video Page ----------------------- */
+.main .item {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.main .item img {
+    width: 100%;
+}
+
+/* ----------------------- End List Video Page ----------------------- */
+
+/* ----------------------- Start Inner Audio Page ----------------------- */
+.audio-player {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    color: #969696;
+    margin-bottom: 30px;
+}
+
+.audio-play-list {
+    padding-bottom: 10px;
+    width: 90%;
+    max-width: 360px;
+    margin: 13px auto;
+}
+
+.audio-play-list li {
+    width: 100%;
+    cursor: pointer;
+    color: #505050;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 1px 1px 1px #04C2ED;
+}
+
+.audio-play-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-play-list li p {
+    height: 100%;
+    padding: 15px 0px;
+    width: calc(100% - 40px);
+    float: left;
+}
+
+
+.play-status {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 16px 0;
+    float: left;
+}
+
+.now-playing {
+    background: #ccc;
+}
+
+.audio-play-list li:last-child {
+    border-bottom: none;
+}
+
+.audio-play-list li.active {
+    color: #04C2ED;
+    background: #fafafa;
+}
+
+/* .album-cover {
+    height: 100%;
+    width: 80px;
+    background: #fff url("../../../../img/WebApps/ooredoo/afasy/logo.svg") no-repeat center;
+} */
+
+.audio-controls-wrapper {
+    position: relative;
+    border-top: 1px solid whitesmoke;
+}
+
+.seek-bar,
+.seek-bar-thumb {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #ebebeb;
+}
+
+.seek-bar-thumb {
+    width: 0%;
+    background: #FBAB7E;
+}
+
+.seek-bar-head {
+    width: 10px;
+    height: 10px;
+    background: #FBAB7E;
+    position: absolute;
+    top: -4.5px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.track-title {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    width: 80%;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    border-bottom: 1px solid whitesmoke;
+    color: #04C2ED;
+}
+
+.time-holder {
+    width: 26%;
+    font-size: 14px;
+    min-width: 80px;
+    max-width: 100px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    text-align: right;
+}
+
+.time-holder div {
+    float: right;
+}
+
+.audio-controls {
+    position: absolute;
+    width: 35%;
+    min-width: 40px;
+    max-width: 60px;
+    /* left: 15px; */
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.buy-rbt {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: #fff;
+    color: #04C2ED;
+    max-width: 120px;
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #04C2ED;
+}
+
+.rbt-msg {
+    width: 100%;
+    padding: 12px 0px;
+    background: rgba(255, 255, 255, .7);
+    text-align: center;
+    color: rgb(100, 100, 100);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.play-btn {
+    height: 100%;
+    width: 60px;
+    height: 60px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    background: #FBAB7E;
+    left: 20px;
+    top: 20px;
+    -webkit-border-radius: 50%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.play-btn span {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 22px;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.play-btn.ios {
+    top: 0;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+
+/* ----------------------- End Inner Audio Page ----------------------- */
 
 /* ----------------------- Start Footer ----------------------- */
 footer {
@@ -487,7 +767,7 @@ footer {
     display: flex;
     width: 100%;
     bottom: 0;
-    background-color: black;
+    background-color: #FFF;
     height: 45px;
     padding: 0px;
     z-index: 2;
@@ -496,14 +776,20 @@ footer {
 footer a {
     text-align: center;
     font-size: 21px;
-    color: #f3e5b8;
+    color: #FBAB7E;
     padding: 10px;
     text-align: center;
     width: 25%;
     text-decoration: none;
 }
 
-/*------------------------------------------------------------------*/
+footer a:focus,
+footer a:hover {
+    color: #FFF;
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-decoration: none;
+}
+
 /*------------------------------------------- loading page ---------------------------------------*/
 /* .loading-overlay {
     background: white;
